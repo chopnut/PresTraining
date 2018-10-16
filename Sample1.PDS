@@ -1,0 +1,139 @@
+[PDSHeader]
+Key=Version32
+PageWidth=8.267000
+PageHeight=11.693000
+Version=6302.0
+Inches=1
+Resolution=300
+PaperSize=1
+CodeSet=2
+LabelType=1
+RecordType=1
+TargetPrinter=1
+Fixed=\0x01
+NoHeader=\0x01
+Unlabelled=\0x01
+
+[RIPOffsets]
+
+[RIPWidths]
+
+[RIPColorRGBs]
+
+[RIPColorNames]
+
+[GRAPHICS]
+
+[FONTS]
+
+[DataSourceIDs]
+
+[DataSourceDefs]
+
+[DataSourceFiles]
+
+[DataSourceFlags]
+
+[DataRecordLengths]
+
+[VERIFICATION]
+version=1.000000
+CodePage=1252
+LanguageID=0C09
+headerSize=00000527
+CRC=01304D7E
+RECORD
+	ALPHA SORTORDER L500
+	ALPHA COUNTER L500
+	ALPHA ROWTYPE L500
+	ALPHA AccountNum L500
+	ALPHA InvoiceNum L500
+	ALPHA Recipient L500
+	ALPHA Client_Address_Line_1 L500
+	ALPHA Client_Address_Line_2 L500
+	ALPHA Client_Address_Line_3 L500
+	ALPHA Bluecare_ID L500
+	ALPHA DepartmentAddress1 L500
+	ALPHA DepartmentAddress2 L500
+	ALPHA DepartmentAddress3 L500
+	ALPHA Department_Friendly_Name L500
+	ALPHA Account_Inquiries L500
+	ALPHA Department_Fax L500
+	ALPHA Statement_Date L500
+	ALPHA StatementPeriod L500
+	ALPHA HCP_Funder_Level L500
+	ALPHA Active_Package_Days L500
+	ALPHA Opening_Balance L500
+	ALPHA Funding_Allocated L500
+	ALPHA Contribution_Invoiced L500
+	ALPHA Contingency_Fund L500
+	ALPHA Admin_Fee_Description L500
+	ALPHA Admin_Fee_Amount_Billed L500
+	ALPHA CaseMan_Fee_Description L500
+	ALPHA CaseMan_Fee_Amount_Billed L500
+	ALPHA Viability_Fee_Description L500
+	ALPHA Viability_Fee_Amount_Billed L500
+	ALPHA Total_Available_Budget L500
+	ALPHA Carry_Over_Balance L500
+	ALPHA Total_Transactions_Expenses L500
+	ALPHA Total_Expenditure_Adjustments L500
+	ALPHA Closing_Balance L500
+	ALPHA Contingency_Fund_Balance L500
+	ALPHA Contribution L500
+	ALPHA Income_Tested_Care_Fee L500
+	ALPHA IsDigitalCopy L500
+	ALPHA Static_Message_1 L500
+	ALPHA Statement_Month L500
+	ALPHA Statement_Month_And_Year L500
+	ALPHA Chart_Check L500
+	ALPHA XML_Client_Address_Line_1 L500
+	ALPHA XML_Client_Address_Line_2 L500
+	ALPHA XML_Client_Address_Line_3 L500
+	ALPHA Service_Block_Name L500
+	ALPHA Supplement_Description L500
+	ALPHA Supplement_Amount L500
+	ALPHA Service_Category L500
+	ALPHA Transaction_Bill_Date L500
+	ALPHA Transaction_Description L500
+	ALPHA Units L500
+	ALPHA Rate L500
+	ALPHA Amount L500
+	ALPHA DtDPID L500
+	ALPHA DtPostcode L500
+	ALPHA DtBSP L500
+	ALPHA DtBarcode L500
+	ALPHA DtMatchType L500
+	ALPHA sort_state L500
+	ALPHA sort_level L500
+	ALPHA sort_code L500
+	ALPHA sort_pcd L500
+	ALPHA npsp_code L500
+	ALPHA Integrity_Check L500
+INTERNAL
+ 	; =======================================================
+	; 				 JOB TEMPLATE/PRINT SPEC INFO
+	; =======================================================
+	; 					 Fill up
+	ALPHA PROGRAMMER 	L50 	= "Ernani"
+	ALPHA JOB_NAME 		L150 	= ""
+	ALPHA SIZE 			L10 	="100"
+	ALPHA PLEX_TYPE 	L20		= "Simplex"
+	ALPHA GSM 			L10  	="100"
+	ALPHA N_UP 			L2  	= "1"
+	; ----------
+	ALPHA JOB_NUMBER L6
+	ALPHA SPOOLNAME L200
+	NUMERIC TOTAL_SHEETS
+	ALPHA DATA_FILE L200
+	ALPHA TODAY_MONTH L50
+	ALPHA TODAY_DAY L2
+	ALPHA TODAY_YEAR L4
+
+
+	
+
+START
+	INCLUDE "Helper.PDI"
+
+GAMEOVER:
+EXIT
