@@ -10,9 +10,9 @@ PaperSize=1
 CodeSet=2
 LabelType=1
 RecordType=6
-TargetPrinter=1
+TargetPrinter=6
 RecordLength=5000
-DATName=C:\Users\ernani.danting\Desktop\PRES TRAINING\Exercise\PresTraining2\PresTraining\069582_BLUECARE_SEPTEMBER_PKG_STMTS_MERVIN_LUPTON.txt
+DATName=..\\
 CRLF=\0x02
 AsciiDelimit=\0x01
 NoHeader=\0x01
@@ -45,8 +45,8 @@ cDelimiter=|
 version=1.000000
 CodePage=1252
 LanguageID=0C09
-headerSize=00000743
-CRC=CD3ACFA0
+headerSize=00000612
+CRC=132DDE26
 RECORD
 	ALPHA SORTORDER L50
 	ALPHA COUNTER L50
@@ -126,14 +126,19 @@ INTERNAL
 	ALPHA STOCK				L100	= ""
 	ALPHA PLEX_TYPE 		L20		= "Simplex"
 	ALPHA N_UP 				L2  	= "1"
-	; - - - - - - - -Dynamicly Allocated
-	ALPHA JOB_NUMBER 		L6
-	ALPHA SPOOLNAME 		L200
+	ALPHA SPOOLDIR			L200    = ""
+	; - - - - - - - - - Dynamicly Allocated
+	ALPHA JOBNUMBER 		L6
+	ALPHA FILENAME			L200 ; data  filename
+	ALPHA SPOOLFULLPATH		L200 ; full path to the spool file
+	ALPHA SPOOLNAME			L200 ; spool filename
+	; - - - - - - - - -
 	NUMERIC SIMPLEX_RECORDS	
 	NUMERIC DUPLEX_RECORDS
 	NUMERIC TOTAL_SHEETS
 	NUMERIC TOTAL_IMPRESSIONS
 	; - - - - - - - - - Helper Variables
+	ALPHA RECORD_ID			L200 = ""
 	ALPHA TODAY_MONTH 		L50
 	ALPHA TODAY_DAY 		L2
 	ALPHA TODAY_YEAR 		L4
@@ -141,16 +146,22 @@ INTERNAL
  	; *******************************************************
 	; 				 	  WORK VARIABLES
 	; *******************************************************
-; =======================================================
+
+
+
+; ========================| START DESIGN |========================
 START
-	;INCLUDE "Helper.PDI"
+	GOSUB JOBSETUP(0,0)	
+
+	COLOR "MAGENTA"
+
 	SETMARGIN 2.0,2.0
 	SETXY 2.0,2.0
 	MOVE "Hello World"
 	ALINE
 	MOVE "And yourself"
 
-; =======================================================
+; ========================| END DESIGN | ============================
 GAMEOVER:
 
 
@@ -159,3 +170,4 @@ GAMEOVER:
 ; $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 EXIT
+INCLUDE "Helper.PDI"
