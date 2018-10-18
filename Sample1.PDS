@@ -12,7 +12,7 @@ LabelType=1
 RecordType=6
 TargetPrinter=6
 RecordLength=5000
-DATName=..\\
+DATName=..\\*LUPTON*
 CRLF=\0x02
 AsciiDelimit=\0x01
 NoHeader=\0x01
@@ -45,8 +45,8 @@ cDelimiter=|
 version=1.000000
 CodePage=1252
 LanguageID=0C09
-headerSize=00000612
-CRC=132DDE26
+headerSize=00000620
+CRC=D211A17D
 RECORD
 	ALPHA SORTORDER L50
 	ALPHA COUNTER L50
@@ -153,13 +153,13 @@ INTERNAL
 START
 	; GOSUB JOBSETUP(0,0)	
 	COLOR "MAGENTA"
-	ORIENTTEXT 0
+	ORIENTTEXT 270
 	
 	
 	SETMARGIN 1
-	SETXY 2,2
+	SETXY $Margin,2
 	MOVE "Hello World"
-	ORIENTTEXT 270
+	ORIENTTEXT 0
 	SETXY 3,2
 	MOVE "Hello World"
 
