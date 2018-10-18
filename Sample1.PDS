@@ -151,15 +151,19 @@ INTERNAL
 
 ; ========================| START DESIGN |========================
 START
-	GOSUB JOBSETUP(0,0)	
-
+	; GOSUB JOBSETUP(0,0)	
 	COLOR "MAGENTA"
-
-	SETMARGIN 2.0,2.0
-	SETXY 2.0,2.0
+	ORIENTTEXT 0
+	
+	
+	SETMARGIN 1
+	SETXY 2,2
 	MOVE "Hello World"
-	ALINE
-	MOVE "And yourself"
+	ORIENTTEXT 270
+	SETXY 3,2
+	MOVE "Hello World"
+
+IGNORE
 
 ; ========================| END DESIGN | ============================
 GAMEOVER:
