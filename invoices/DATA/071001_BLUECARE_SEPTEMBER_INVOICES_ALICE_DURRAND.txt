@@ -1,0 +1,17 @@
+SORT_ORDER	CUSTOMER ACCOUNT	NAME	METHOD OF PAYMENT	CUSTOMER GROUP	E-MAIL	MOBILE PHONE	SITE	BPAY NUMBER	FACILITY NO#	ADDRESS LINE 1	ADDRESS LINE 2	ADDRESS LINE 3	ADDRESS LINE 4	ADDRESS LINE 5	ADDRESS LINE 6	STATEMENT NAME	CITY	POSTCODE	STATE	STARTDATE	ENDDATE	DUEDATE	BILLERCODE	dt dpid	Dt Postcode	dt bsp	Dt Barcode	Dt Match Type	sort_state	sort_level	sort_code	sort_pcd	npsp_code
+18	CUS003654	Mrs Alice Garvock Durrand	CHQ	RES				9900036543	RC5851	C/ -Protective Office 	 Locked Bag 5115					Mrs Alice Durrand	PARRAMATTA	2124	NSW	1/09/2018 	30/09/2018	20/10/2018	279281	77718876	2124	006	1301012121210122222120303223213022113	Parser Warning	2-NSW	2	006	2124	006
+18	CUS003654			1/09/2018 	Opening Balance				396.66 																								
+18	CUS003654		REC1947557	19/09/2018	Thank you for your payment - Protective Office	1	-1546.97	0	-1546.97 																								
+18	CUS003654		CFE2157493	20/09/2018	Daily Care Fees for 20/09/2018 to 30/09/2018	11	0.5	0	5.5 																								
+18	CUS003654		REC1952342	21/09/2018	Thank you for your payment	1	-396.66	0	-396.66 																								
+18	CUS003654		CFE2159436	24/09/2018	Cigarettes 21/08/18	1	49.95	0	49.95 																								
+18	CUS003654		CFE2159437	24/09/2018	Cigarettes 29/08/18	1	49.95	0	49.95 																								
+18	CUS003654		CFE2159438	24/09/2018	Cigarettes 06/09/18	1	51.95	0	51.95 																								
+18	CUS003654		CFE2159439	24/09/2018	Cigarettes 11/09/18	1	51.95	0	51.95 																								
+18	CUS003654		CFE2164977	30/09/2018	Daily Care Fees for 1/10/2018 to 31/10/2018	31	50.66	0	1570.46 																								
+18	CUS003654		CFE2172027	30/09/2018	Re-charge mobile phone 14/09/2018	1	70	0	70 																								
+18	CUS003654		CFE2172028	30/09/2018	Partial Re-charge mobile phone and lunch on 14/09/2018	1	40	0	40 																								
+18	CUS003654		CFE2172031	30/09/2018	Cigarettes 18/09/18	1	51.95	0	51.95 																								
+18	CUS003654		CFE2172032	30/09/2018	Cigarettes 26/09/18	1	52.95	0	52.95 																								
+18	CUS003654		CFE2172033	30/09/2018	Telstra Pre-Paid Re-charge 26/09/18	1	30	0	30 																								
+EOF
