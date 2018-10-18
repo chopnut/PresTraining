@@ -30,6 +30,8 @@ cDelimiter=|
 [GRAPHICS]
 
 [FONTS]
+0=D#<N=Segoe UI Symbol><P=14><C=UNI>
+1=D#<N=Arial Black><S=BOLD><P=9><C=ANSI>
 
 [DataSourceIDs]
 
@@ -45,8 +47,8 @@ cDelimiter=|
 version=1.000000
 CodePage=1252
 LanguageID=0C09
-headerSize=00000620
-CRC=D211A17D
+headerSize=00000700
+CRC=7FDD1C15
 RECORD
 	ALPHA SORTORDER L50
 	ALPHA COUNTER L50
@@ -153,11 +155,10 @@ INTERNAL
 START
 	; GOSUB JOBSETUP(0,0)	
 	COLOR "MAGENTA"
-	ORIENTTEXT 270
-	
-	
+
 	SETMARGIN 1
-	SETXY $Margin,2
+	SETXY 2,5
+	ORIENTTEXT 90
 	MOVE "Hello World"
 	ORIENTTEXT 0
 	SETXY 3,2
